@@ -25,7 +25,7 @@ export let courses = [
         rating: 3.5,
     },
 ];
-console.log(courses)
+
 
 export let addedCourses = [
     {
@@ -44,3 +44,8 @@ export let addedCourses = [
         rating: 3.8,
     }
 ];
+
+let arr=[10,15,20,30,35];
+//tổng các ptu chẵn
+const  sum=arr.filter(number=>number%2===0).reduce((num1,num2)=>num1+num2,0);
+console.log(sum)

@@ -24,5 +24,14 @@ function showRatingMax4(cou) {
 showRatingMax4(courses);
 
 //yêu cầu 3
-const concat=[...courses,...addedCourses];
-console.log(concat);
+// function merge(courses, addedCourses) {
+//     return [...courses, ...addedCourses];
+// }
+// const concat = merge(courses, addedCourses);
+// console.log(concat);
+
+const x = (courses, addedCourses) => {
+    return [...courses ,...addedCourses];
+}
+const a = x(courses, addedCourses);
+console.log(a);

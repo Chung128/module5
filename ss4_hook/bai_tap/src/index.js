@@ -1,19 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import ListComponent from "./class_component/ListComponent";
-import TodoList from "./class_component/TodoList";
-import ListStudentComponent from "./function_component/ListStudentComponent";
+import ComponentCounter from "./bai_tap2/component/ComponentCounter";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <ListStudentComponent setIsLoadPage/>
-   // <ListComponent/>
-    //<TodoList/>
+  // <React.StrictMode>
+  //   <App />
+  // </React.StrictMode>
+    <ComponentCounter/>
 );
 
 // If you want to start measuring performance in your app, pass a function

@@ -1,4 +1,4 @@
-import {students} from "./ListStudents"
+import {students} from "../service/ListStudents"
 import React, {Component} from "react";
 
 class ListComponent extends Component {

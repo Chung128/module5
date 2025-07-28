@@ -9,11 +9,8 @@ import * as Yup from "yup";
 function AddStudentComponent() {
     const navigate = useNavigate();
     const [classList, setClassList] = useState([])
-    useEffect(() => {
-        setClassList(getAllClass())
-    }, []);
     const [student, setStudent] = useState({
-        id: '',
+        // id: '',
         name: '',
         gender: false,
         subject: [],
@@ -22,27 +19,37 @@ function AddStudentComponent() {
             name: ''
         },
     });
+    useEffect(() => {
+        setClassList(getAllClass())
+    }, []);
 
-    const generateNextId = () => {
-        if (getAll().length === 0) return 1;
-        return Math.max(...getAll().map(s => s.id)) + 1;
-    };
+    useEffect( () => {
+        const fetchStudents = async () => {
+            const result = await getAll();
+            setStudent(result);
+        };
+         fetchStudents();
+    }, []);
 
-    const handleAdd = (value) => {
+    // const generateNextId = () => {
+    //     if (studentList.length === 0) return 1;
+    //     return Math.max(...studentList.map(s => s.id)) + 1;
+    // };
+
+    const handleAdd = async (value) => {
         value = {
             ...value,
             gender: value.gender === "true",
             className: JSON.parse(value.className)
         }
-
-        addNewStudent(value);
+        await addNewStudent(value);
         navigate("/list");
         toast.success("Thêm mới thành công");
     }
 
     const handleValidate = Yup.object({
-        name: Yup.string().required('Không được để trống'),
-        // .matches(/^[A-Z][a-z]\s[A-Z][a-z]*/,'Nhập tên sai định dạng'),
+        name: Yup.string().required('Không được để trống')
+         .matches(/^[A-Z][a-z\d]*(\s[A-Z][a-z\d]*)*$/,'Nhập tên sai định dạng'),
         gender: Yup.string().required("Chọn giới tính"),
         subject: Yup.array().min(1, "Chọn ít nhất 1 môn học"),
     })
@@ -52,7 +59,7 @@ function AddStudentComponent() {
             <h2>Thêm mới</h2>
             <Formik initialValues={{
                 ...student,
-                id: generateNextId()
+                // id: generateNextId()
             }}
                     onSubmit={handleAdd}
                     validationSchema={handleValidate}

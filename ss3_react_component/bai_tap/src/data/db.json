@@ -1,0 +1,53 @@
+{
+  "students": [
+    {
+      "name": "Chung",
+      "gender": true,
+      "subject": [
+        "JS",
+        "C#"
+      ],
+      "className": {
+        "id": 1,
+        "name": "JV101"
+      },
+      "id": 3
+    },
+    {
+      "name": "Khanh Tran",
+      "gender": false,
+      "subject": [
+        "JS",
+        "C#"
+      ],
+      "className": {
+        "id": 2,
+        "name": "JV102"
+      },
+      "id": 4
+    },
+    {
+      "name": "Binh",
+      "gender": true,
+      "subject": [
+        "Java",
+        "JS"
+      ],
+      "className": {
+        "id": 1,
+        "name": "JV101"
+      },
+      "id": 5
+    }
+  ],
+  "className": [
+    {
+      "id": 1,
+      "name": "JV101"
+    },
+    {
+      "id": 2,
+      "name": "JV102"
+    }
+  ]
+}

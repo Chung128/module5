@@ -16,7 +16,12 @@ const DetailStudentComponent = () => {
     });
     useEffect(() => {
         //setStudent(findById(Number(id))); dùng 2 dấu bằng thì parse ở đây về number
-        setStudent(findById(id));
+       // setStudent(findById(id));
+        const fetchData=async () => {
+            let stu = await findById(id)
+            setStudent(stu);
+        }
+        fetchData()
     }, [])
     return <>
         <div>

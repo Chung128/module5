@@ -1,10 +1,10 @@
 import React from "react";
 import {Button, Modal} from "react-bootstrap";
-import { deleteById} from "../service/StudentRouter";
+import {deleteById, findById} from "../service/StudentRouter";
 
 function DeleteStudentComponent({deleteStudent, isShowModal, isCloseModal}) {
-    const handleDelete = () => {
-        deleteById(deleteStudent.id);
+    const handleDelete =async () => {
+        await deleteById(deleteStudent.id);
         isCloseModal();
     }
     return <>

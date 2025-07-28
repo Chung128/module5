@@ -25,7 +25,6 @@ function ListStudentComponent() {
         <div style={{padding: "20px"}}>
             <h2>Danh sách sinh viên</h2>
             <AddComponent setIsLoadPage={setIsLoadPage}/>
-            {/*<button onClick={this.handleAdd}>Thêm mới</button>*/}
             <table border="1" cellPadding="10" cellSpacing="0">
                 <thead>
                 <tr>
@@ -46,10 +45,6 @@ function ListStudentComponent() {
                         <td>
                             <button onClick={()=>{handleShowModal(item)}}>Delete</button>
                         </td>
-                        {/*<td>*/}
-                        {/*    <button onClick={() => this.handleEdit(item)}>Sửa</button>*/}
-                        {/*    <button onClick={() => this.handleDelete(item.id)}>Xóa</button>*/}
-                        {/*</td>*/}
                     </tr>
                 )}
                 </tbody>
@@ -58,12 +53,8 @@ function ListStudentComponent() {
             <DeleteStudentComponent
                 deleteStudent ={deleteStudent}
                 isShowModal ={isShowModal}
-                handleCloseModal ={handleCloseModal}
+                isCloseModal ={handleCloseModal}
             />
-            {/*<div>*/}
-            {/*    {isShowAdd && this.formAdd()}*/}
-            {/*    {isShowEdit && this.formEdit()}*/}
-            {/*</div>*/}
         </div>
     )
 }

@@ -8,10 +8,16 @@ import reportWebVitals from './reportWebVitals';
 import ListComponent from "./class_component/ListComponent";
 import TodoList from "./class_component/TodoList";
 import ListStudentComponent from "./function_component/ListStudentComponent";
+import ListStudentComponentRouter from "./router_conponent/ListStudentComponent";
+import {BrowserRouter} from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <ListStudentComponent setIsLoadPage/>
+    // <ListStudentComponent setIsLoadPage/>
+    <BrowserRouter>
+        <App/>
+    </BrowserRouter>
+
    // <ListComponent/>
     //<TodoList/>
 );

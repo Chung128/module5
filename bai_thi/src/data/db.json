@@ -1,0 +1,126 @@
+{
+  "sach": [
+    {
+      "id": 1,
+      "maSach": "BO-0001",
+      "tensach": "toán học",
+      "theLoai": {
+        "id": 1,
+        "name": "sách giáo khoa"
+      },
+      "ngayNhap": "12/12/2024",
+      "soLuong": 3
+    },
+    {
+      "id": 2,
+      "maSach": "BO-0002",
+      "tensach": "văn học",
+      "theLoai": {
+        "id": 1,
+        "name": "sách giáo khoa"
+      },
+      "ngayNhap": "12/10/2024",
+      "soLuong": 8
+    },
+    {
+      "id": 3,
+      "maSach": "BO-0003",
+      "tensach": "thám tử conan",
+      "theLoai": {
+        "id": 2,
+        "name": "truyện tranh"
+      },
+      "ngayNhap": "12/8/2024",
+      "soLuong": 5
+    },
+    {
+      "maSach": "BO-0004",
+      "tensach": "kiến thức về JS",
+      "ngayNhap": "2025-08-01",
+      "theLoai": {
+        "id": 3,
+        "name": "sách nâng cao",
+        "moTa": ""
+      },
+      "soLuong": 2,
+      "id": 4
+    },
+    {
+      "maSach": "BO-0005",
+      "tensach": "tổng hợp về Java",
+      "ngayNhap": "2025-08-02",
+      "theLoai": {
+        "id": 3,
+        "name": "sách nâng cao",
+        "moTa": ""
+      },
+      "soLuong": 3,
+      "id": 5
+    },
+    {
+      "maSach": "BO-0006",
+      "tensach": "tổng hợp về React",
+      "ngayNhap": "2025-08-05",
+      "theLoai": {
+        "id": 3,
+        "name": "sách nâng cao",
+        "moTa": ""
+      },
+      "soLuong": 21,
+      "id": 6
+    },
+    {
+      "maSach": "BO-0007",
+      "tensach": "tổng hợp về redux",
+      "ngayNhap": "2025-08-30",
+      "theLoai": {
+        "id": 1,
+        "name": "sách giáo khoa",
+        "moTa": ""
+      },
+      "soLuong": 50,
+      "id": 7
+    },
+    {
+      "maSach": "BO-0008",
+      "tensach": "Hóa học 12",
+      "ngayNhap": "2025-08-22",
+      "theLoai": {
+        "id": 1,
+        "name": "sách giáo khoa",
+        "moTa": ""
+      },
+      "soLuong": "17",
+      "id": 8
+    },
+    {
+      "maSach": "BO-0044",
+      "tensach": "tổng hợp về Java",
+      "ngayNhap": "2025-07-30",
+      "theLoai": {
+        "id": 1,
+        "name": "sách giáo khoa",
+        "moTa": ""
+      },
+      "soLuong": "5.6",
+      "id": 9
+    }
+  ],
+  "theLoai": [
+    {
+      "id": 1,
+      "name": "sách giáo khoa",
+      "moTa": ""
+    },
+    {
+      "id": 2,
+      "name": "truyện tranh",
+      "moTa": ""
+    },
+    {
+      "id": 3,
+      "name": "sách nâng cao",
+      "moTa": ""
+    }
+  ]
+}

@@ -8,15 +8,15 @@ import DetailStudentComponent from "./router_conponent/DetailStudentComponent";
 import UpdateStudentComponent from "./router_conponent/UpdateStudentComponent";
 
 function App() {
-  return <>
-      <HeadComponentRouter/>
-      <Routes>
-        <Route path={'/list'} element={<ListStudentComponentRouter/>}/>
-        <Route path={'/add'} element={<AddStudentComponent/>}/>
-        <Route path={'/detail/:id'} element={<DetailStudentComponent/>}/>
-        <Route path={'/update/:id'} element={<UpdateStudentComponent/>}/>
-      </Routes>
-   <ToastContainer/>
+    return <>
+        <HeadComponentRouter/>
+        <Routes>
+            <Route path={'/list'} element={<ListStudentComponentRouter/>}/>
+            <Route path={'/add'} element={<AddStudentComponent/>}/>
+            <Route path={'/detail/:id'} element={<DetailStudentComponent/>}/>
+            <Route path={'/update/:id'} element={<UpdateStudentComponent/>}/>
+        </Routes>
+        <ToastContainer/>
     </>
 }
 

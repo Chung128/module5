@@ -130,7 +130,7 @@ function ListStudentComponentRouter() {
                                     </Link>
                                 </div>
                             </td>
-                            <td>    
+                            <td>
                                 <div className="btn-group" role="group">
                                     <button
                                         className="btn btn-danger btn-sm"

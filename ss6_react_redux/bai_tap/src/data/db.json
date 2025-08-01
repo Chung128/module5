@@ -1,0 +1,102 @@
+{
+  "products": [
+    {
+      "name": "IP 16 promax",
+      "dateOfEntry": "2025-07-30",
+      "dateOfIssue": "",
+      "size": "false",
+      "color": [
+        "Vàng"
+      ],
+      "category": {
+        "id": 2,
+        "name": "Điện thoại"
+      },
+      "price": "25000000",
+      "id": 1
+    },
+    {
+      "name": "Máy tính HP probook 3000",
+      "dateOfEntry": "2025-07-22",
+      "dateOfIssue": "",
+      "size": "false",
+      "color": [
+        "Vàng"
+      ],
+      "category": {
+        "id": 1,
+        "name": "Laptop"
+      },
+      "price": "100000000",
+      "id": 2
+    },
+    {
+      "name": "Sạc 36W (sạc nhanh)",
+      "dateOfEntry": "2025-07-31",
+      "dateOfIssue": "",
+      "size": "true",
+      "color": [
+        "Đỏ"
+      ],
+      "category": {
+        "id": 4,
+        "name": "Phụ kiện"
+      },
+      "price": "300000",
+      "id": 3
+    },
+    {
+      "name": "Apple watch ",
+      "dateOfEntry": "2025-07-24",
+      "dateOfIssue": "",
+      "size": "true",
+      "color": [
+        "Đỏ",
+        "Vàng"
+      ],
+      "category": {
+        "id": 5,
+        "name": "Đồng hồ"
+      },
+      "price": "1500000",
+      "id": 4
+    },
+    {
+      "name": "Máy tính bảng HP",
+      "dateOfEntry": "2025-07-31",
+      "dateOfIssue": "",
+      "size": "false",
+      "color": [
+        "Xanh"
+      ],
+      "category": {
+        "id": 1,
+        "name": "Laptop"
+      },
+      "price": "25000000",
+      "id": 5
+    }
+  ],
+  "category": [
+    {
+      "id": 1,
+      "name": "Laptop"
+    },
+    {
+      "id": 2,
+      "name": "Điện thoại"
+    },
+    {
+      "id": 3,
+      "name": "Tai nghe"
+    },
+    {
+      "id": 4,
+      "name": "Phụ kiện"
+    },
+    {
+      "id": 5,
+      "name": "Đồng hồ"
+    }
+  ]
+}

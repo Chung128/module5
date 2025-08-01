@@ -1,0 +1,70 @@
+{
+  "hoaDon": [
+    {
+      "id": 2,
+      "maHoaDon": "MH-0002",
+      "soKW": 3,
+      "donGia": 3000,
+      "tongTien": "",
+      "thang": "2025-07-31",
+      "khachHang": {
+        "id": 2,
+        "name": "Bình",
+        "diaChi": ""
+      }
+    },
+    {
+      "id": 3,
+      "maHoaDon": "MH-0003",
+      "soKW": 15,
+      "donGia": 3000,
+      "tongTien": "",
+      "thang": "2025-07-31",
+      "khachHang": {
+        "id": 3,
+        "name": "Đông",
+        "diaChi": ""
+      }
+    },
+    {
+      "maHoaDOn": "",
+      "soKW": "20",
+      "donGia": "3500",
+      "tongTien": "",
+      "thang": "2025-07-31",
+      "khachHang": {
+        "id": 1,
+        "name": "Chung"
+      },
+      "maHoaDon": "MHD-0004",
+      "id": 4
+    },
+    {
+      "maHoaDOn": "",
+      "soKW": "5",
+      "donGia": "3000",
+      "tongTien": 15000,
+      "thang": "2025-07-31",
+      "khachHang": {
+        "id": 1,
+        "name": "Chung"
+      },
+      "maHoaDon": "MHD-0005",
+      "id": 5
+    }
+  ],
+  "khachHang": [
+    {
+      "id": 1,
+      "name": "Chung"
+    },
+    {
+      "id": 2,
+      "name": "Bình"
+    },
+    {
+      "id": 3,
+      "name": "Đông"
+    }
+  ]
+}
